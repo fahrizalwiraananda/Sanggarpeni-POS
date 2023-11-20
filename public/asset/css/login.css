@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, .container{
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    background-color: var(--white) !important;
+}
+
+:root {
+    --topNavbarHeight: 56px;
+    --offcanvas-width: 250px;
+
+    /*Coloring*/
+    --black: #212529;
+    --semi-black: #777777;
+    --white: #FDFCFC;
+    --brown: #B56116;
+    --brown-2: #534C42;
+}
+
+/*Bg Color*/
+.bg-brown{
+    background-color: var(--brown);
+}
+
+.bg-brown-2{
+    background-color:var(--brown-2);
+}
+
+.bg-white-2{
+    background-color: var(--white);
+}
+
+/*Text Color*/
+.text-one{
+    color: var(--black) !important;
+}
+
+.text-two{
+    color: var(--semi-black) !important;
+}
+
+.text-three{
+    color: var(--brown) !important;
+}
+
+.text-four{
+    color: var(--white) !important;
+}
+
+.text-logo{
+    color: var(--brown-2) !important;
+}
+
+/*Horizontal Line*/
+.horizontal-line{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.horizontal-line::before, .horizontal-line::after{
+    content: "";
+    height: 1px;
+    background-color: var(--brown) !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-line:before, .horizontal-line:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.horizontal-line:before {
+    margin-right: 10px
+}
+
+.horizontal-line:after {
+    margin-left: 10px
+}
+
+/*Text Color*/
+
+/*Font Size*/
+
+.fs-7{
+    font-size: .8rem !important;
+}
+
+.fs-8{
+    font-size: .7rem !important;
+}
+
+/*Feight Page*/
+.height-100{
+    height: 100vh !important;
+}
+.height-1{
+    height: 85vh !important;
+}
+
+.height-2{
+    height: 80vh !important;
+}
+
+.height-3{
+    height: 70vh !important;
+}
+
+.height-4{
+    height: 10vh !important;
+}
+
+/*Border Radius*/
+.br-1{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+/*Card*/
+.card{
+    border: none !important;
+    background-color: #003e5600 !important;
+}
+
+/*Image Login*/
+.img-login{
+    height: 250px;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-login-section{
+        display: none !important;
+    }
+}
+
+/*Image Logo*/
+#image-logo{
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/*Link*/
+.nav-link{
+    color: var(--semi-black);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.nav-link:hover{
+    color: var(--brown) !important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/*Button*/
+.btn-sign{
+    background-color: var(--brown) !important;
+    color: #fdfcfc !important;
+    border: none !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+input[type=text], input[type=email], input[type=password], input[type=number], select,  input[type=date], input[type=file], textarea{
+    background-color: #FDFCFC!important;
+    font-size: 0.75rem !important;
+    border-left: 5px solid #B56116 !important;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, input[type=date]:focus, input[type=file]:focus, textarea:focus{
+    background-color: #FDFCFC!important;
+    border: 1px solid #B56116!important;
+    box-shadow: none !important;
+    border-left: 5px solid #B56116 !important;
+    box-shadow: 1px 1px 5px #B56116 !important;
+}
+
+input[type=checkbox]:checked{
+    accent-color: #B56116 !important;
+}
+
+
+/*Image Effect*/
+.reflection{
+    -webkit-box-reflect:  below 0px -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,0.25)), color-stop(0.4, transparent));
+}
+
+/*Shadow*/
+#shadow-card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+  }
+
+.shadow-card {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+}
